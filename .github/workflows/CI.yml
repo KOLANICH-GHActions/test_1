@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: test
+        uses: KOLANICH-GHActions/test_1@master
